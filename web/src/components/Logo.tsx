@@ -5,10 +5,19 @@ type LogoProps = {
 };
 export default function Logo({ className }: LogoProps) {
   return (
-    <img
-      src="/images/branding/favicon.svg"
-      alt="Bells Delites"
-      className={cn("rounded", className)}
-    />
+    <svg viewBox="0 0 512 512" className={cn(className)} xmlns="http://www.w3.org/2000/svg">
+      <rect width="512" height="512" rx="100" fill="#e91e8c" />
+      <text
+        x="256"
+        y="370"
+        fontFamily="Georgia, serif"
+        fontSize="380"
+        fontWeight="bold"
+        fill="white"
+        textAnchor="middle"
+      >
+        B
+      </text>
+    </svg>
   );
 }
